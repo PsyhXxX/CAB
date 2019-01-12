@@ -30,11 +30,14 @@
       <TreeView prefHeight="375.0" prefWidth="185.0" BorderPane.alignment="CENTER" />
    </left>
    <center>
-      <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <TableView fx:id="tableMain" prefHeight="375.0" prefWidth="412.0" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn fx:id="surname" prefWidth="75.0" text="Фамилия" />
-          <TableColumn fx:id="name" prefWidth="75.0" text="Имя" />
-            <TableColumn fx:id="patronymic" prefWidth="75.0" text="Отчество" />
+          <TableColumn fx:id="tblClmnSurname" prefWidth="75.0" text="Фамилия" />
+          <TableColumn fx:id="tblClmnName" prefWidth="75.0" text="Имя" />
+          <TableColumn fx:id="tblClmnPatronymic" prefWidth="75.0" text="Отчество" />
+          <TableColumn fx:id="tblClmnPhoneNumber" prefWidth="75.0" text="Телефон" />
+          <TableColumn fx:id="tblClmnMail" prefWidth="75.0" text="Почта" />
+          <TableColumn fx:id="tblClmnAnnotation" prefWidth="75.0" text="Примечание" />
         </columns>
       </TableView>
    </center>
