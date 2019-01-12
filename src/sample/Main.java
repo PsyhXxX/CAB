@@ -8,12 +8,15 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
+    final int WIDTH = 1024;
+    final int HEIGHT = 768;
+
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage window) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Counselor address book");
-        primaryStage.setScene(new Scene(root, 300, 275));
-        primaryStage.show();
+        window.setTitle("Counselor address book");
+        window.setScene(new Scene(root, WIDTH, HEIGHT));
+        window.show();
     }
 
 
